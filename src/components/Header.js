@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 function Header() {
   return (
     <header>
-      <Link exact to="/">
+      <Link to="/">
         <h2>ecommerce shop</h2>
       </Link>
       <Link to="/cart">
