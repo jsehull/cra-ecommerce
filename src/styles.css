@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: coral;
+}
+
+header {
+  padding: 0 10px;
+  background: lavender;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lavender;
+  box-shadow: 0px 2px 10px -5px #000;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
