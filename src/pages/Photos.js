@@ -11,7 +11,6 @@ function Photos() {
 
   return (
     <main className="photos">
-      <h1>images for sale</h1>
       {imageEls}
     </main>
   )
