@@ -1,11 +1,13 @@
-import React, {useState, useContext} from 'react'
+import React, {useContext} from 'react'
 import PropTypes from 'prop-types'
+
+import useHover from '../hooks/useHover'
 import {Context} from '../Context'
 
 function CartItems({item}) {
-  const [hovered, setHovered] = useState(false)
-  const {removeFromCart} = useContext(Context)
+  const {hovered, ref} = useHover()
 
+  const {removeFromCart} = useContext(Context)
   const trashIconClass = hovered ? 'fill' : 'line'
 
   return (
@@ -13,8 +15,7 @@ function CartItems({item}) {
       <i
         className={`ri-delete-bin-${trashIconClass}`}
         onClick={() => removeFromCart(item.id)}
-        onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => setHovered(false)}
+        ref={ref}
       >
       </i>
       <img src={item.url} width="130px" alt="pic descrip"/>
