@@ -1,3 +1,7 @@
+# cra-ecommerce
+
+<img src="github-preview.png" alt="app sample">
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### `yarn start`
